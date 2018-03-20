@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function greet(){
+		alert("환영합니다.");
+	}
+	function clickme(){
+		alert("버튼을 클릭하셨습니다.");
+	}
+	function overme(){
+		alert("마우스를 버튼 위에 올리셨어요.");
+	}
+	function cf(){
+		input=confirm("삭제하시겠습니까?");
+		if(input==true) alert("삭제완료");
+		else alert("삭제취소");
+	}
+	function pp(){
+		input=prompt("e-mail을 입력하세요.","e-mail");
+		if(input==null) alert('e-mail 등록이 취소되었습니다.');
+		else alert(input+"이 등록되었습니다.");
+	}
+	function printPage(){
+		agree=confirm("이 페이지를 출력할까요?");
+		if(agree) window.print();
+		else alert("인쇄취소");
+	}
+	function win(){
+		window.open("popup.html","","height=200,width=300,left=0,top=0");
+	}
+</script>
+</head>
+<body onLoad="greet()">
+페이지가 로드되면 '환영합니다.'라는 경고창을 띄운다.<br><br>
+<form>
+	버튼을 클릭하면 '버튼을 클릭하셨습니다.'라는 경고창을 띄운다.<br>
+	<input type="button" value="mouseclick" onClick="clickme()">
+	<br><br>
+	버튼에 마우스를 오버하면 '마우스를 버튼 위에 올리셨어요.'라는 경고창을 띄운다.<br>
+	<input type="button" value="mouseover" onMouseOver="overme()">
+	<br><br>
+	버튼을 클릭하면 '삭제하시겠습니까?' 확인/취소창을 띄운다.<br>
+	확인을 클릭하면 '삭제완료', 취소를 클릭하면 '삭제취소'라는 경고창을 띄운다.<br>
+	<input type="button" value="confirm" onClick="cf()">	
+	<br><br>
+	버튼을 클릭하면 'e-mail을 입력하세요'라는 프롬프트창을 띄운다.<br>
+	확인을 클릭하면 입력한 e-mail+'이 등록되었습니다.'라는 경고창을 띄운다.<br>
+	취소를 클릭하면 'e-mail 등록이 취소되었습니다.'라는 경고창을 띄운다.<br>
+	<input type="button" value="prompt" onClick="pp()">
+	<br><br>
+	버튼을 클릭하면 '이 페이지를 출력할까요?'라는 확인/취소 창을 띄운다.<br>
+	확인을 클릭하면 인쇄창을 띄우고, 취소를 클릭하면 '인쇄취소'라는 경고창을 띄운다.<br>
+	<input type="button" value="print" onClick="printPage()">
+	<br><br>
+	버튼을 클릭하면 popup.html파일을 팝업창으로 띄운다.<br>
+	<input type="button" value="popup" onClick="win()">
+</form>
+</body>
+</html>

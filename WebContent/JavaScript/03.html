@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		jumsu=75;
+		if(jumsu>=90) hak="A";
+		else if(jumsu>=80) hak="B";
+		else if(jumsu>=70) hak="C";
+		else if(jumsu>=60) hak="D";
+		else hak="F";
+		document.write(jumsu+"점 : "+hak+"학점<br><hr>");
+		
+		switch(parseInt(jumsu/10)){
+		case 10:
+		case 9: hak="A"; break;
+		case 8: hak="B"; break;
+		case 7: hak="C"; break;
+		case 6: hak="D"; break;
+		default: hak="F";
+		}
+		document.write(jumsu+"점 : "+hak+"학점<br><hr>");
+		
+		sum=0;
+		for (var i = 1; i <=10; i++) {
+			document.write(i+" ");
+			sum+=i;
+		}
+		document.write("<br>1~10까지의 합 : "+sum+"<br><hr>");
+		
+		sum=0;
+		for (var i = 1; i <=10; i++) {
+			sum+=i;
+			document.write(i+"까지의 합 : "+sum+"<br>");			
+		}
+		
+	</script>
+</body>
+</html>

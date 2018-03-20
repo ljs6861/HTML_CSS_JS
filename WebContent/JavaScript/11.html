@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	human=new Array("홍길동","김길동","조길동","박길동","이길동");
+	document.write("<h4>1개의 배열 사용</h4>");
+	for(var i=0;i<human.length;i++){
+		document.write(human[i]+" ");
+	}	
+	document.write("<hr>");
+	
+	document.write("join()-"+human.join()+"<br>");
+	document.write("join(/)-"+human.join("/")+"<br>");
+	document.write("join(*)-"+human.join("*")+"<br>");
+	document.write("slice(0,2)-"+human.slice(0,2)+"<br>");
+	document.write("slice(2)-"+human.slice(2)+"<br>");
+	document.write("reverse()-"+human.reverse()+"<br>");
+	document.write("sort()-"+human.sort());
+	document.write("<hr>");
+	
+	document.write("<h4>3개의 배열 사용</h4>");
+	city=new Array("서울","부산","광주","대구","인천");
+	jumsu=new Array(100,90,75,80,95);	
+</script>
+<table border="1" width="300">
+	<tr><th>이름</th><th>지역</th><th>점수</th></tr>
+	<script type="text/javascript">
+		for(var i=0;i<human.length;i++){
+			document.write("<tr><td>"+human[i],"</td><td>",
+					city[i],"</td><td>",jumsu[i],"</td></tr>");
+		}
+	</script>
+</table>
+</body>
+</html>

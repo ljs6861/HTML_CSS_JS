@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function cal(op1,op2){
+		document.write("op1+op2="+(op1+op2));
+		document.write("<br>op1-op2="+(op1-op2));
+		document.write("<br>op1*op2="+(op1*op2));
+		document.write("<br>op1/op2="+(op1/op2)+"<br><br>");
+	}
+	function cal2(op,op1,op2){
+		if(op=="+") return (op1+op2);
+		else if(op=="-") return(op1-op2);
+		else if(op=="*") return(op1*op2);
+		else if(op=="/") return(op1/op2);
+		else return "error"
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	cal(10,5);
+	cal(15,4);
+	
+	res=cal2("+",10,5);
+	document.write("op1+op2="+res+"<br>");
+	res=cal2("-",10,5);
+	document.write("op1-op2="+res+"<br>");
+	res=cal2("*",10,5);
+	document.write("op1*op2="+res+"<br>");
+	res=cal2("/",10,5);
+	document.write("op1/op2="+res+"<br>");
+	res=cal2("%",10,5);
+	document.write("op1%op2="+res+"<br>");
+</script>
+</body>
+</html>

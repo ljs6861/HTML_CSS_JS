@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function calc(form){
+		form.result.value=eval(form.expr.value);
+	}
+</script>
+</head>
+<body>
+<form>
+	<h4>왼쪽에 수식을 입력하시고 "계산해!"를 누르세요.</h4>
+	<table border="1" cellpadding="10">
+		<tr>
+			<th>계산식</th>
+			<th>계산결과</th>
+		</tr>
+		<tr>
+			<td><input type="text" name="expr" size="15"/></td>
+			<td><input type="text" name="result" size="15"/></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+			<input type="button" value="계산해!" onClick="calc(this.form)"/>
+			<input type="reset" value="취소"/>
+			</td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

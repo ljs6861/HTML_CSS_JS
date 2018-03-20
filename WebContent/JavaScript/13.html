@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function person(job,style,hobby){
+		this.job=job;
+		this.style=style;
+		this.hobby=hobby;
+		this.prt=prt;
+	}
+	function prt(){
+		document.write("<h5>내가 만나고픈 사람</h5>"+"직업 : "+this.job+
+				"<br>성격 : "+this.style+"<br>취미 : "+this.hobby);
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+	man=new person("프로그래머","꽃미남","공상");
+	woman=new person("웹디자이너","터프걸","드라이브");
+	man.prt();
+	woman.prt();
+</script>
+</body>
+</html>

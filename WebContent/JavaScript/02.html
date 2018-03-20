@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//자료형 변수=값;
+		var num1=10;
+		document.write("num1="+num1+"<br>");
+		num1="자바스크립트";
+		document.write("num1="+num1+"<br><hr>");
+		
+		su1=7;
+		su2=3;
+		document.write("su1+su2="+(su1+su2)+"<br>");
+		document.write("su1-su2="+(su1-su2)+"<br>");
+		document.write("su1*su2="+(su1*su2)+"<br>");
+		document.write("su1/su2="+parseInt(su1/su2)+"<br>");
+		document.write("su1%su2="+(su1%su2)+"<br><hr>");
+		
+		res=(su1==su2);
+		document.write("su1==su2 : "+res+"<br>");
+		res=(su1!=su2);
+		document.write("su1!=su2 : "+res+"<br>");
+		res=(su1>su2);
+		document.write("su1>su2 : "+res+"<br><hr>");
+		
+		human="연인";
+		//삼항연산자 변수=조건?참:거짓
+		res=(human=="연인")?"사랑":"우정";
+		document.write("res="+res+"<br>");
+		human="친구";
+		res=(human=="연인")?"사랑":"우정";
+		document.write("res="+res+"<br>");
+	</script>
+</body>
+</html>

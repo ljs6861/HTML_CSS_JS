@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function(){
+		$('h1').click(function(){//이벤트연결
+			alert("클릭!");
+		});
+		$('h1').hover(function(){
+			$(this).css({
+				background:'red',color:'white'
+			});
+		}, function(){
+			$(this).css({
+				background:'',color:''
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<h1>Click</h1>
+<hr>
+보통 : 흰바탕, 검정글씨<br>
+마우스오버 : 빨강바탕, 흰글씨
+</body>
+</html>

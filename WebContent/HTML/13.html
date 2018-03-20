@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="13_1.html" method="post">
+<!-- 
+action : 전송위치, 데이터를 전달할 목적지
+method : 전송방식
+ 1. get : 주소에 데이터를 직접 입력해 전달, 13_1.html?name=aaa&pwd=1111
+ 2. post : 별도의 방법을 사용해 데이터를 해당 주소로 전달
+-->
+이름 : <input type="text" name="irum" maxlength="5" placeholder="이름입력"><br><br>
+별명 : <input type="text" name="aname" value="별명"><br><br>
+주소 : <input type="text" name="addr" size="50"><br><br>
+비밀번호 : <input type="password" name="pwd" maxlength="8"><br><br>
+hidden : <input type="hidden" name="hide"><br><br>
+image : <input type="image" src="../images/seoul.png"><br><br>
+file : <input type="file" name="file"><br><br>
+
+취미를 선택하세요:<br>
+<input type="checkbox" name="hobby" value="1" checked>게임
+<input type="checkbox" name="hobby" value="2">채팅
+<input type="checkbox" name="hobby" value="3">등산
+<input type="checkbox" name="hobby" value="4">낚시
+<input type="checkbox" name="hobby" value="5">여행<br><br>
+
+취미를 선택하세요:<br>
+<input type="radio" name="hobby" value="a" checked>게임
+<input type="radio" name="hobby" value="b">채팅
+<input type="radio" name="hobby" value="c">등산
+<input type="radio" name="hobby" value="d">낚시
+<input type="radio" name="hobby" value="e">여행<br><br>
+
+취미를 선택하세요:<br>
+<select name="hobby">
+	<option value="a">게임
+	<option value="b">채팅
+	<option value="c" selected>등산
+	<option value="d">낚시
+	<option value="e">여행
+</select><br><br>
+
+취미를 선택하세요:<br>
+<select name="hobby" size="3" multiple>
+	<option value="a">게임
+	<option value="b">채팅
+	<option value="c" selected>등산
+	<option value="d">낚시
+	<option value="e">여행
+</select><br><br>
+
+<textarea name="texta" rows="10" cols="30">
+자기소개를 입력하세요.
+</textarea><br><br>
+
+<select>
+	<optgroup label="HTML5">
+		<option>Multimedia Tag</option>
+		<option>Connectivity</option>
+		<option>Device Access</option>
+	</optgroup>
+	<optgroup label="CSS3">
+		<option>Animation</option>
+		<option>3D Transform</option>
+	</optgroup>
+</select><br><br>
+
+<input type="button" value="버튼">
+<input type="submit" value="전송">
+<input type="reset" value="취소">
+</form>
+</body>
+</html>

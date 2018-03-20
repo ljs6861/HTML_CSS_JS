@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+	#box{
+		width:100px;height:100px;background-color:red;	
+	}
+	#box.hover{
+		background-color:blue;border-radius:50px;
+	}
+</style>
+<script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#box').hover(function(){
+			$('#box').addClass('hover');//클래스를 추가
+		},function(){
+			$('#box').removeClass('hover');//클래스를 제거
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="box"></div>
+	<hr>
+	보통 : 빨강색 네모<br>
+	마우스오버 : 파랑색 원
+</body>
+</html>
